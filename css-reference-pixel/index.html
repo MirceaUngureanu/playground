@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="REM/Pixel vs CSS Reference Pixel">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Reference Pixel playground</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+  <div class="rem-based">
+    <p class="text-size">This text is sized with REM</p>
+    <div class="square">
+      <span class="text-size">This text is sized with REM</span>
+    </div>
+  </div>
+  <div class="pixel-based">
+    <p class="text-size">This text is sized with Pixels</p>
+    <div class="square">
+      <span class="text-size">This text is sized with Pixels</span>
+    </div>
+  </div>
+  <p>Although changing the root element font size will scale your REM styles, it will not affect your media queries with REM or EM. The obsolete text zoom / size settings will affect REM or EM media queries.</p>
+  <label for="htmlBaseFontSize">
+    Try to change the root element font size:
+    <input id="htmlBaseFontSize" type="number" value="16">
+  </label>
+</body>
+</html>

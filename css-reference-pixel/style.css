@@ -1,0 +1,55 @@
+html {
+    font-size: 100%;
+    font-family: Open Sans, Helvetica Neue, Helvetica, sans-serif;
+    background: white;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  .rem-based .text-size {
+    font-size: 2rem;
+  }
+  
+  .pixel-based .text-size {
+    font-size: 32px;
+  }
+  
+  .rem-based .square {
+    background-color: crimson;
+    padding: 1rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  
+  .rem-based .square .text-size {
+    font-size: 0.8rem;
+    color: white;
+  }
+  
+  .pixel-based .square {
+    background-color: crimson;
+    padding: 16px;
+    width: 160px;
+    height: 160px;
+  }
+  
+  .pixel-based .square .text-size {
+    font-size: 12.8px;
+    color: white;
+  }
+  
+  
+  
+  @media screen and (min-width: 20em) {
+    .rem-based .square {
+      width: 20rem;
+    }
+  }
+  
+  @media screen and (min-width: 320px) {
+    .pixel-based .square {
+      width: 320px;
+    }
+  }
